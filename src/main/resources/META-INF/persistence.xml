@@ -2,15 +2,18 @@
 <persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2"
              xmlns="http://xmlns.jcp.org/xml/ns/persistence"
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
-    <persistence-unit name="U4-W3-D3-HW">
+    <persistence-unit name="U4-W3-D4-HW">
 
         <!-- Il persistence unit ci serve per configurare la connessione ad uno specifico db -->
+        <class>naderdeghaili.entities.Attendance</class>
+        <class>naderdeghaili.entities.Event</class>
+        <class>naderdeghaili.entities.Location</class>
+        <class>naderdeghaili.entities.Person</class>
 
-      
         <!-- Serve specificare l'elenco delle entities con tanto di package -->
 
         <properties>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/gestioneeventi"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/gestioneeventi2"/>
             <!-- Dopo l'ultimo slash inserisco il nome del database al quale voglio collegarmi (IL DB DEVE ESISTERE PERO") -->
             <property name="jakarta.persistence.jdbc.user" value="postgres"/>
             <property name="jakarta.persistence.jdbc.password" value="1234"/>
