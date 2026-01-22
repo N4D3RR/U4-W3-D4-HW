@@ -7,7 +7,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "eventi")
-
+@Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name = "tipo_evento")
 public class Event {
     @Id
     @GeneratedValue

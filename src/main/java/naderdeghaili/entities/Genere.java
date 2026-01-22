@@ -1,5 +1,5 @@
 package naderdeghaili.entities;
 
-public enum TipoConcerto {
+public enum Genere {
     CLASSICO, ROCK, POP
 }

@@ -44,4 +44,11 @@ public class EventsDAO {
             System.out.println(e.getMessage());
         }
     }
+
+    public void getConcertiInStreaming(boolean streaming) {
+
+
+    }
+
+
 }
